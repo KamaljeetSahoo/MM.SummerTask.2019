@@ -39,7 +39,7 @@
 
         <div class="carousel-inner">
           <div class="item active">
-            <img src="images/la.jpg" alt="Los Angeles" style="width:100%;">
+            <img src="<?php echo base_url(); ?>assets/images/la.jpg" alt="Los Angeles" style="width:100%;">
             <div class="carousel-caption">
               <h2>THEME 1</h2>
             </div>
