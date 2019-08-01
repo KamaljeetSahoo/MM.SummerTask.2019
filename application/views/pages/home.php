@@ -46,14 +46,14 @@
           </div>
 
           <div class="item">
-            <img src="images/chicago.jpg" alt="Chicago" style="width:100%;">
+            <img src="<?php echo base_url(); ?>assets/images/chicago.jpg" alt="Chicago" style="width:100%;">
             <div class="carousel-caption">
               <h2>THEME 2</h2>
             </div>
           </div>
         
           <div class="item">
-            <img src="images/ny.jpg" alt="New york" style="width:100%;">
+            <img src="<?php echo base_url(); ?>assets/images/ny.jpg" alt="New york" style="width:100%;">
             <div class="carousel-caption">
               <h2>THEME 3</h2>
             </div>
