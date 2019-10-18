@@ -11,3 +11,5 @@
 		</div>
 <?php endforeach; ?>
 </div>
+<div class="container text-center"><a href="<?php echo base_url() ?>/articles/create"><button class="btn btn-deault">ADD Article</button></a></div>
+<br>

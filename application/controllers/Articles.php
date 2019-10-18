@@ -30,6 +30,7 @@
 
 			$this->form_validation->set_rules('title', 'Title', 'required');
 			$this->form_validation->set_rules('content', 'Content', 'required');
+			$this->form_validation->set_rules('category', 'Category', 'required');
 
 			if($this->form_validation->run() === FALSE){
 				$this->load->view('templates/header');
@@ -47,8 +48,8 @@
 			redirect('articles');
 		}
 
-		public function edit($id){
-			$data['articles'] = $this->post_model->update_post($id);
+		public function edit($slug){
+			$data['articles'] = $this->post_model->get_posts($slug);
 
 			if(empty($data['articles'])){
 				show_404();
@@ -59,7 +60,7 @@
 			$this->load->view('templates/header');
 			$this->load->view('articles/edit', $data);
 			$this->load->view('templates/footer');
-			redirect('articles');
+			//redirect('articles');
 		}
 
 		public function update(){

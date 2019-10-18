@@ -35,7 +35,7 @@
 			return true;
 		}
 
-		public function update_post($id){
+		public function update_post(){
 			$slug = url_title($this->input->post('title'));
 
 			$data = array(
@@ -45,7 +45,7 @@
 				'category' => $this->input->post('category')
 			);
 
-			$this->db->where('id', $id);
+			$this->db->where('id', $this->input->post('id'));
 			return $this->db->update('articles', $data);
 		}
 	}

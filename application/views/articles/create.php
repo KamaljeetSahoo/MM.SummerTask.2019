@@ -14,7 +14,7 @@
 	  	<label>Category</label>
 	  	<textarea class="form-control" name="category" placeholder="Enter Category"></textarea>
 	  </div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
+	  <button type="submit" class="btn btn-primary">Submit </button>
 	</form>
 	<br>
 	<br>
